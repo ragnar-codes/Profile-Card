@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+}
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+
+}
+.cover {
+    width: 100%;
+    height: 40%;
+    background: url('images/bg-pattern-card.svg');
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 38%;
+    margin-top: -12%;
+    border: 2px solid white;
+}
+.profile{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    text-align: center;
+}
+.bio{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bio > p {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    padding: 2%;
+}
+.bio > p strong {
+    color: hsl(229, 23%, 23%);
+}
+
+.numbers{
+    border-top: 1px hsl(227, 10%, 46%) solid;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.numbers > .box{
+    margin-top: 5%;
+}
+.subnum {
+    font-size: 12px;
+    color: hsl(227, 10%, 46%);
+}
+.attribution {
+    margin-top: 3%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    font-Weight: 500;
+}
+.link {
+    text-decoration: none;
+    color: hsl(229, 23%, 23%);
+}
+.link:hover{
+    color: hsl(227, 10%, 46%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 900px){
+  .container{
+    width: 80%;
+    height: 50vh;
+  }
+  .attribution {
+    flex-direction: column;
+  }
+}
